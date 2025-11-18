@@ -1,7 +1,7 @@
 import React from 'react';
-import './Grid.css';
+import './ListComponent.css';
 
-const GridComponent = () => {
+const ListComponent = () => {
 
   // All project data is in ONE place
   /*const projects = [
@@ -168,4 +168,4 @@ const GridComponent = () => {
   );
 };
 
-export default GridComponent;
+export default ListComponent;

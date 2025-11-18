@@ -13,8 +13,10 @@ function ServicesPage(){
             backgroundRepeat: 'no-repeat'}}>
       <h1>Welcome to the Services Page!</h1>
     </div>
-
-    <p> Our Services include web and mobile application development, software automation testing, & more.</p>
+    <div style={{padding: '20px', background: '#443f3d', color: '#fff', textAlign: 'center'}}>
+        <p> Our Services include web and mobile application development, software automation testing, & more.</p>
+    </div>
+    
 
     <FooterComp />
   </>

@@ -15,10 +15,13 @@
 
 .work-experience {
   margin-top: 20px;
-  background: rgb(173, 85, 3);
+  background: #ad5503;
   border: 1px solid black;
   margin-right: 20px;
   padding: 10px;
+  gap: 0px;
+  width: 35%;
+  height: 400px;
 }
 
 .education {

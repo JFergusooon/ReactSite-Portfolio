@@ -35,9 +35,15 @@ function AboutPage() {
             {/* Work Experience */}
             <div className='work-experience'>
               <h3> Work Experience</h3>
-              <div style={{color: '#fff'}}> 
-                <p> Software Engineer in Test - Cox Automotive </p>
-                <p> Draper, Utah - Sep 2022, Aug 2025 </p>
+              <div style={{color: '#fff', padding: '0px', margin: '0 auto', gap: '0px', textAlign: 'left'}}> 
+                <p style={{fontSize: '20px', padding: '0px', margin: '0px'}}> Software Engineer in Test</p>
+                <p style={{fontSize: '15px', padding: '0px', margin: '0px'}}> Cox Automotive - Sep 2022, Aug 2025</p>
+                <p style={{fontSize: '15px', padding: '0px', margin: '0px'}}> Draper, Utah</p>
+              </div>
+              <div style={{color: '#fff', padding: '0px', margin: '0 auto', gap: '0px', textAlign: 'left'}}> 
+                <p style={{fontSize: '20px', padding: '0px', margin: '0px'}}> QA Engineer Intern</p>
+                <p style={{fontSize: '15px', padding: '0px', margin: '0px'}}> Cox Automotive - Jan 2022, Aug 2022</p>
+                <p style={{fontSize: '15px', padding: '0px', margin: '0px'}}> Draper, Utah</p>
               </div>
             </div>
 

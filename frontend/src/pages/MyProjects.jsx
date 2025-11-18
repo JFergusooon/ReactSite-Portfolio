@@ -1,7 +1,7 @@
 // pages/Contact.jsx
 import React from 'react';
 import NavBar from '../components/navBar';
-import GridComponent from '../components/GridComponent';
+import GridComponent from '../components/ListComponent';
 import FooterComp from '../components/FooterComponent';
 
 function MyProjectsPage() {

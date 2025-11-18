@@ -45,41 +45,125 @@ const GridComponent = () => {
 
   return (
     <div className="project-list">
-  {projects.map((proj) => (
-    <div key={proj.name} className="project-row">
+    
+      {/* Battlemon Project Entry */}
+      <div key="" className="project-row">
+        <div className="project-left">
+          <img
+            src={`images/Battlemon.png`}
+            alt={"Battlemon Image"}
+            className="project-thumb"
+          />
 
-      {/* LEFT: Image(s) */}
-      <div className="project-left">
-        <img
-          src={`images/${proj.img}`}
-          alt={proj.name}
-          className="project-thumb"
-        />
-      </div>
-      <div class='project-middle'></div>
-      {/* RIGHT: Text content */}
-      <div className="project-right">
-        <a href={proj.url} target='_blank' rel="noreferrer" class='link'>
-            <h2 className="project-title">{proj.name}</h2>
-        </a>
-        <p className="project-headline">{proj.headline}</p>
-        <p className="project-description">{proj.description}</p>
-        <div className="project-meta-row">
-          {proj.releaseDate && (
-            <span className="project-meta"><strong>Release:</strong> {proj.releaseDate}</span>
-          )}
-          {proj.operatingSystem && (
-            <span className="project-meta"><strong>Platforms:</strong> {proj.operatingSystem}</span>
-          )}
-          {proj.url && (
-            <span className="project-meta"><strong>Link:</strong> <a href={proj.url} target="_blank" rel="noopener noreferrer">{proj.url}</a></span>
-          )}  
+          <div className='battlemon-images'>
+            <img
+            src={`images/Battlemon.png`}
+            alt={"Battlemon Image"}
+            style= {{height: '125px', width: '125px'}}
+          />
+          <img
+            src={`images/Battlemon.png`}
+            alt={"Battlemon Image"}
+            style= {{height: '125px', width: '125px'}}
+          />
+          </div>
         </div>
+        <div class='project-middle'></div>
+        
+        <div className="project-right">
+          <a href={"https://jfergusooon.itch.io/battlemon"} target='_blank' rel="noreferrer" class='link'>
+              <h2 className="project-title">Battlemon</h2>
+          </a>
+          <p className="project-headline">A monster-catching RPG game inspired by classic titles.</p>
+          <p className="project-description">Written in SwiftUI for macOs. Utilizing a small screen resolution, users can start their journey with their favorite starter, battle wild pokemon, grow your party, purchase items from the shop, store items in their bag, and complete their full 151 pokedex.</p>
+          <div className="project-meta-row">
+              <span className="project-meta"><strong>Release: </strong>2024</span>
+              <span className="project-meta"><strong>Platforms: </strong>MacOS</span>
+              <span className="project-meta"><strong>Link: </strong> <a href={"https://jfergusooon.itch.io/battlemon"} target="_blank" rel="noopener noreferrer">https://jfergusooon.itch.io/battlemon</a></span>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Tracker Project Entry */}
+      <div key="" className="project-row">
+        <div className="project-left">
+          <img
+            src={`images/Tracker.png`}
+            alt={"Tracker Image"}
+            className="project-thumb"
+          />
+        </div>
+        <div class='project-middle'></div>
+        
+        <div className="project-right">
+          <a href={"#"} target='_blank' rel="noreferrer" class='link'>
+              <h2 className="project-title">Tracker</h2>
+          </a>
+          <p className="project-headline">A productivity app to help you manage your job applications efficiently.</p>
+          <p className="project-description">Written primarily in Python with Tkinter for the GUI, it lets users add, edit, and track their applications. Features include company name, position, and status updates.</p>
+          <div className="project-meta-row">
+              <span className="project-meta"><strong>Release: </strong>Coming Soon</span>
+              <span className="project-meta"><strong>Platforms: </strong>Windows</span>
+              <span className="project-meta"><strong>Link: </strong> <a href={""} target="_blank" rel="noopener noreferrer">github.com/jobtracker</a></span>
+          </div>
+        </div>
+
+      </div>
+
+      {/* InstaConnect Project Entry */}
+      <div key="" className="project-row">
+        <div className="project-left">
+          <img
+            src={`images/`}
+            alt={"InstaConnect Image"}
+            className="project-thumb"
+          />
+        </div>
+        <div class='project-middle'></div>
+        
+        <div className="project-right">
+          <a href={"#"} target='_blank' rel="noreferrer" class='link'>
+              <h2 className="project-title">InstaConnect</h2>
+          </a>
+          <p className="project-headline">A social media platform to connect with friends instantly.</p>
+          <p className="project-description">A social media platform to connect with friends instantly.</p>
+          <div className="project-meta-row">
+              <span className="project-meta"><strong>Release: </strong>2022</span>
+              <span className="project-meta"><strong>Platforms: </strong>Web</span>
+              <span className="project-meta"><strong>Link: </strong> <a href={"#"} target="_blank" rel="noopener noreferrer">jferguson-dev.com/instantconnect</a></span>
+          </div>
+        </div>
+
+      </div>
+      
+      {/* BookHook Project Entry */}
+      <div key="" className="project-row">
+        <div className="project-left">
+          <img
+            src={`images/`}
+            alt={"BookHook Image"}
+            className="project-thumb"
+          />
+        </div>
+        <div class='project-middle'></div>
+        
+        <div className="project-right">
+          <a href={"#"} target='_blank' rel="noreferrer" class='link'>
+              <h2 className="project-title">BookHook</h2>
+          </a>
+          <p className="project-headline">An online bookstore with a vast collection of books.</p>
+          <p className="project-description">An online bookstore with a vast collection of books.</p>
+          <div className="project-meta-row">
+              <span className="project-meta"><strong>Release:</strong>2022</span>
+              <span className="project-meta"><strong>Platforms:</strong>Web / Mobile</span>
+              <span className="project-meta"><strong>Link:</strong> <a href={"#"} target="_blank" rel="noopener noreferrer">jferguson-dev.com/bookhook</a></span>
+          </div>
+        </div>
+
       </div>
 
     </div>
-  ))}
-</div>
 
   );
 };

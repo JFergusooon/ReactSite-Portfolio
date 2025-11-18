@@ -7,7 +7,14 @@ import FooterComp from '../components/FooterComponent';
 function AboutPage() {
   return <>
     <NavBar/>
-    <h1>A bit about me</h1>
+    <div style={{width: '100%', height: '375px', textAlign: 'center', marginTop: '2px', color: "#fff", 
+            backgroundImage: "url('images/Background.png')", display: 'flex', justifyContent: 'center', alignItems: 'center', 
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'}}>
+      <h1>A bit about me</h1>
+    </div>
+    
     <div className='project-row'>
       <div className='project-left'>
         <img src={'images/Myself.png'} 

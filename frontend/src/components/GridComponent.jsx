@@ -10,12 +10,7 @@ const GridComponent = () => {
       img: "Battlemon.png",
       url: "https://jfergusooon.itch.io/battlemon",
       headline: "A monster-catching RPG game inspired by classic titles.",
-      description: "Written in SwiftUI for macOs. \
-                    Utilizing a small screen resolution, users can \
-                    start their journey with their favorite starter,\
-                    battle wild pokemon, grow your party, purchase \
-                    items from the shop, store items in their bag, \
-                    and complete their full 151 pokedex.",
+      description: "Written in SwiftUI for macOs. Utilizing a small screen resolution, users can start their journey with their favorite starter, battle wild pokemon, grow your party, purchase items from the shop, store items in their bag, and complete their full 151 pokedex.",
       operatingSystem: "Windows",
       releaseDate: "2024",
     },
@@ -24,8 +19,7 @@ const GridComponent = () => {
       img: "Tracker.png",
       url: "#",
       headline: "A productivity app to help you manage your job applications efficiently.",
-      description: "Written primarily in Python with Tkinter for the GUI, it lets users add, edit, and track their applications. \
-                    Features include company name, position, and status updates. ",
+      description: "Written primarily in Python with Tkinter for the GUI, it lets users add, edit, and track their applications. Features include company name, position, and status updates. ",
       operatingSystem: "Windows / Mac",
       releaseDate: "Coming soon",
     },

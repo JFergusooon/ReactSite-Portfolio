@@ -10,7 +10,7 @@ function AboutPage() {
     <h1>A bit about me</h1>
     <div className='project-row'>
       <div className='project-left'>
-        <img src={'images/Myself.png'} width='550px' height='700px'></img>
+        <img src={'images/Myself.png'} width='550px' height='700px' alt='Professional Photo'></img>
       </div>
     
     

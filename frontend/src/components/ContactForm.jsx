@@ -47,6 +47,7 @@ const ContactForm = () => {
           placeholder="Your full name"
           value={form.name}
           onChange={handleChange}
+          style={{width: '75%'}}
           required
         />
 
@@ -57,6 +58,7 @@ const ContactForm = () => {
           placeholder="you@example.com"
           value={form.email}
           onChange={handleChange}
+          style={{width: '75%'}}
           required
         />
 
@@ -67,6 +69,7 @@ const ContactForm = () => {
           placeholder="Developer, Designer, Client, etc."
           value={form.role}
           onChange={handleChange}
+          style={{width: '75%'}}
           required
         />
 
@@ -76,6 +79,7 @@ const ContactForm = () => {
           placeholder="Tell me about your request..."
           value={form.desc}
           onChange={handleChange}
+          style={{width: '75%'}}
           rows="4"
           required
         />

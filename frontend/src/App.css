@@ -58,6 +58,12 @@
   color: black;
 }
 
+.navBarButton:hover {
+  background-color: #e24a03;
+  color: #fff;
+  cursor: pointer;
+}
+
 .aboutMeSection {
   display: flex;
   flex-direction: column;

@@ -1,19 +1,21 @@
 .contact-container {
-  display: flex;
-  justify-content: center;
   padding: 40px;
-  width: 100%;
+  width: 95%;
+  background-color: #5778aa;
+  margin: 0;
+  display: flex;
 }
 
 .contact-card {
   background: #ffffff;
   padding: 32px;
-  width: 100%;
+  width: 95%;
   max-width: 480px;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 12px;
 }
 

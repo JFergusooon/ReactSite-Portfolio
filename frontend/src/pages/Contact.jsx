@@ -19,7 +19,6 @@ function ContactPage() {
     </div>
 
     <div>
-      <h2>Contact Me</h2>
       <ContactForm/>
     </div>
 

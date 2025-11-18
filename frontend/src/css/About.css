@@ -5,3 +5,62 @@
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
+
+.horizontal-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-experience {
+  margin-top: 20px;
+  background: rgb(173, 85, 3);
+  border: 1px solid black;
+}
+
+.education {
+  margin-left: 20px;
+  background: rgb(117, 39, 39);
+  border: 1px solid black;
+}
+
+.skills {
+  margin-top: 20px;
+  margin-left: 20px;
+  background: rgb(51, 51, 51);
+  border: 1px solid black;
+}
+
+.selfie-left {
+  width: 35%; /* one-third of row */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 710px;
+  background-color: orange;
+  border: solid 1px black;
+  border-radius: 50px;
+}
+
+.selfie-middle {
+  width: 10%;
+}
+
+.selfie-row {
+  background: #353131;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+  padding: 20px;
+  background: #443f3d;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.selfie-image {
+  border-radius: 50px;
+  border: 1px solid black;
+}

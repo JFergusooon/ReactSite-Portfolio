@@ -1,0 +1,120 @@
+/* Main vertical list container */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px;
+  width: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth; /* smooth scrolling */
+}
+
+/* Each row */
+.project-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  background: #443f3d;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-row:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* LEFT SIDE: Image */
+.project-left {
+  width: 33%; /* one-third of row */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+  background: #f0f0f0
+}
+
+.project-thumb:hover {
+  transform: scale(1.03);
+}
+
+.project-middle {
+  width: 12%;
+}
+
+/* RIGHT SIDE: Text section */
+.project-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: slategray;
+}
+
+/* Title bigger */
+.project-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: brown;
+}
+
+/* Description below title */
+.project-description {
+  font-size: 1.1rem;
+  color: #000000;
+  margin-bottom: 5px;
+  background: #ffffff;
+  height: 400px;
+  font-size: 26px;
+  border-radius: 20px;
+}
+
+.project-headline {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #ffffff;
+  background-color: burlywood;
+}
+
+.link:visited {
+  color: #ffffff;
+}
+
+/* Horizontal meta row */
+.project-meta-row {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 1rem;
+  background-color: brown;
+  position: static;
+  margin-top: auto;
+  text-align: right;
+}
+
+.project-meta strong {
+  font-weight: 600;
+}
+
+/* Responsive: stack image above text on very small screens */
+@media (max-width: 700px) {
+  .project-row {
+    flex-direction: column;
+  }
+
+  .project-left,
+  .project-right {
+    width: 100%;
+  }
+}

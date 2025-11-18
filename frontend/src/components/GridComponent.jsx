@@ -59,7 +59,7 @@ const GridComponent = () => {
       <div class='project-middle'></div>
       {/* RIGHT: Text content */}
       <div className="project-right">
-        <a href={proj.url} target='_blank' class='link'>
+        <a href={proj.url} target='_blank' rel="noreferrer" class='link'>
             <h2 className="project-title">{proj.name}</h2>
         </a>
         <p className="project-headline">{proj.headline}</p>

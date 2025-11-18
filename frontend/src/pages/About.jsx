@@ -13,7 +13,7 @@ function AboutPage() {
         <img src={'images/Myself.png'} 
             width='550px' 
             height='700px' 
-            alt="Professional Photo"></img>
+            alt="Professional"></img>
       </div>
     
     

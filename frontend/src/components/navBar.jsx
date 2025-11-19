@@ -33,7 +33,7 @@ function NavBar() {
         <Link to="/" className='navBarButton'>Home</Link>
         <Link to="/projects" className='navBarButton'>My Projects</Link>
         <Link to="/about" className='navBarButton'>About Me</Link>
-        <Link to="/services" className='navBarButton'>Services</Link>
+        {/*<Link to="/services" className='navBarButton'>Services</Link>*/}
         <Link to="/contact" className='navBarButton'>Contact</Link>
       </div>
 

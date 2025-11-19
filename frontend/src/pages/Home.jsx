@@ -15,13 +15,18 @@ function HomePage() {
       <h1>Welcome to the Home Page!</h1>
     </div>
 
-    <div style={{height: '300px', padding: '20px', background: '#443f3d', color: '#fff', textAlign: 'center', height: '150px', alignItems: 'center', justifyContent: 'center'}}>
+    <div style={{height: '500px'}}>
+
+    </div>
+
+
+    <div style={{height: '300px', padding: '20px', background: '#443f3d', color: '#fff', alignItems: 'center'}}>
       <p style={{width: "320px"}}>Software Development</p>
       <p style={{width: '320px', textAlign: 'left'
       }}>ONS has a rich history developing both server side and web based software solutions. We pride ourselves on our clean, professional and scalable software that functions as expected while being delivered on time. Stop dealing with excuses.</p>
     </div>
     {/*Why Choose Me Section*/}
-    <div>
+    <div style={{border: '2px solid black', width: '1000px', alignItems: 'center', margin: 'auto'}}>
       <div style={{padding: '20px', background: '#f4f1ed', color: '#000', textAlign: 'center'}}>
           <div>
               <h2> Why Choose Me? </h2>

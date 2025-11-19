@@ -35,16 +35,43 @@ function AboutPage() {
             {/* Work Experience */}
             <div className='work-experience'>
               <h3> Work Experience</h3>
-              <div style={{color: '#fff', padding: '0px', margin: '0 auto', gap: '0px', textAlign: 'left'}}> 
-                <p style={{fontSize: '20px', padding: '0px', margin: '0px'}}> Software Engineer in Test</p>
-                <p style={{fontSize: '15px', padding: '0px', margin: '0px'}}> Cox Automotive - Sep 2022, Aug 2025</p>
-                <p style={{fontSize: '15px', padding: '0px', margin: '0px'}}> Draper, Utah</p>
+              <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '15px'}}>
+                
+                <div style={{display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center'}}>
+                  <div style={{background: 'black', height: '10px', width: '10px' , borderRadius: '5px'}}></div>
+                  
+                  <div style={{background: 'black', height: '150px', width: '3px'}}></div>
+                
+                  <div style={{background: 'black', height: '10px', width: '10px', borderRadius: '5px'}}></div>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div>
+                  <div style={{color: '#fff', padding: '0px', margin: '0 auto', gap: '0px', textAlign: 'left'}}> 
+                    <p style={{fontSize: '20px', padding: '0px', margin: '0px'}}> Software Engineer in Test</p>
+                    <p style={{fontSize: '15px', padding: '0px', margin: '0px'}}> Cox Automotive - Sep 2022, Aug 2025</p>
+                    <p style={{fontSize: '15px', padding: '0px', margin: '0px'}}> Draper, Utah</p>
+                  </div>
+                  <div style={{background: '#ad5503', height: '25px'}}></div>
+                  <div style={{color: '#fff', padding: '0px', margin: '0 auto', gap: '0px', textAlign: 'left'}}> 
+                    <p style={{fontSize: '20px', padding: '0px', margin: '0px'}}> QA Engineer Intern</p>
+                    <p style={{fontSize: '15px', padding: '0px', margin: '0px'}}> Cox Automotive - Jan 2022, Aug 2022</p>
+                    <p style={{fontSize: '15px', padding: '0px', margin: '0px'}}> Draper, Utah</p>
+                  </div>
+                </div>
               </div>
-              <div style={{color: '#fff', padding: '0px', margin: '0 auto', gap: '0px', textAlign: 'left'}}> 
-                <p style={{fontSize: '20px', padding: '0px', margin: '0px'}}> QA Engineer Intern</p>
-                <p style={{fontSize: '15px', padding: '0px', margin: '0px'}}> Cox Automotive - Jan 2022, Aug 2022</p>
-                <p style={{fontSize: '15px', padding: '0px', margin: '0px'}}> Draper, Utah</p>
-              </div>
+              
             </div>
 
             <div style={{backgroundColor: '#e24a03', width: '5px'}}></div>
@@ -54,10 +81,14 @@ function AboutPage() {
             <div>
               <div className = 'education'>
                 <h3> Education </h3>
-                <div style={{color: '#fff'}}> 
-                  <p> Neumont College of Computer Science </p>
-                  <p> Bachelor of Science in Software Engineering </p>
-                  <p> Graduated: September 2022  | GPA: 3.65</p>
+                <div style={{color: '#fff'}}>
+                  <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '15%', margin: '0px', padding: '0px', height: '30px'}}>
+                    <p style={{fontSize: '18px', paddingLeft: '10px', margin: '0px', textAlign: 'left'}}> Neumont College of Computer Science </p>
+                    <p style={{color: '#7e7a7aff'}}>GPA: 3.65</p>
+                  </div>
+                  
+                  <p style={{fontSize: '16px', paddingLeft: '30px', margin: '0px', textAlign: 'left'}}> Bachelor of Science in Software Engineering </p>
+                  <p style={{fontSize: '14px', paddingLeft: '30px', margin: '0px', textAlign: 'left'}}> Graduated: September 2022</p>
                 </div>
               </div>
               <div className = 'skills'>

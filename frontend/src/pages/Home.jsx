@@ -1,8 +1,8 @@
 // pages/Home.jsx
 import React from 'react';
 import NavBar from '../components/navBar';
-import FooterComp from '../components/FooterComponent';
 import ProjectsGrid from '../components/ProjectsGrid';
+import ModernFooter from '../Modern Components/ModernFooterComponent';
 
 function HomePage() {
   return <>
@@ -66,7 +66,7 @@ function HomePage() {
       <ProjectsGrid />
     </div>
 
-    <FooterComp />
+    <ModernFooter />
   </>
 }
 

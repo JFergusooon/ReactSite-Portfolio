@@ -1,8 +1,8 @@
 // pages/Contact.jsx
 import React from 'react';
 import NavBar from '../components/navBar';
-import GridComponent from '../components/ListComponent';
-import FooterComp from '../components/FooterComponent';
+import ModernProjectList from '../Modern Components/ModernProjectListComponent';
+import ModernFooter from '../Modern Components/ModernFooterComponent';
 
 function MyProjectsPage() {
 
@@ -16,9 +16,9 @@ function MyProjectsPage() {
             backgroundRepeat: 'no-repeat'}}>
       <h1> My Projects</h1>
     </div>
-    <GridComponent/>
+    <ModernProjectList/>
 
-    <FooterComp />
+    <ModernFooter />
   </>
 }
 

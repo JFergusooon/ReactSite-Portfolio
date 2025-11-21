@@ -2,8 +2,8 @@
 import React from 'react';
 import NavBar from '../components/navBar';
 import '../css/Contact.css';
-import ContactForm from '../components/ContactForm';
-import FooterComp from '../components/FooterComponent';
+import ModernContactForm from '../Modern Components/ModernContactComponent';
+import ModernFooter from '../Modern Components/ModernFooterComponent';
 
 
 
@@ -19,10 +19,10 @@ function ContactPage() {
     </div>
 
     <div>
-      <ContactForm/>
+      <ModernContactForm />
     </div>
 
-    <FooterComp />
+    <ModernFooter />
   </>
 }
 

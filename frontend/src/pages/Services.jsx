@@ -1,7 +1,7 @@
 // pages/Contact.jsx
 import React from 'react';
 import NavBar from '../components/navBar';
-import FooterComp from '../components/FooterComponent';
+import ModernFooter from '../Modern Components/ModernFooterComponent';
 
 function ServicesPage(){
   return <>
@@ -18,7 +18,7 @@ function ServicesPage(){
     </div>
     
 
-    <FooterComp />
+    <ModernFooter />
   </>
 }
 

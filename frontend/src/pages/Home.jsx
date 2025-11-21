@@ -7,22 +7,22 @@ import ModernFooter from '../Modern Components/ModernFooterComponent';
 function HomePage() {
   return <>
     <NavBar/>
-    <div style={{width: '100%', height: '375px', textAlign: 'center', marginTop: '2px', color: "#fff", 
+    <div style={{width: '100%', height: '250px', textAlign: 'center', marginTop: '2px', color: "#fff", 
             backgroundImage: "url('images/Background.png')", display: 'flex', justifyContent: 'center', alignItems: 'center', 
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'}}>
-      <h1>Welcome to the Home Page!</h1>
+      <h1  style={{fontSize: '34px', fontWeight: 'bold'}}>Welcome to the Home Page!</h1>
     </div>
 
-    <div style={{height: '500px'}}>
+    <div style={{height: '500px'}} className="bg-gradient-to-br from-orange-500 to-red-800">
 
     </div>
 
 
-    <div style={{height: '300px', padding: '20px', background: '#443f3d', color: '#fff', alignItems: 'center'}}>
-      <p style={{width: "320px"}}>Software Development</p>
-      <p style={{width: '320px', textAlign: 'left'
+    <div style={{display: 'flex', flexDirection: 'column', height: '300px', padding: '20px', background: '#443f3d', color: '#fff', alignItems: 'center', textAlign: 'left', gap: "10px"}}>
+      <p style={{width: "320px", marginBottom: '25px', color: 'yellow', marginRight: '20%'}}>Software Development</p>
+      <p style={{width: '320px', textAlign: 'left', marginRight: '20%'
       }}>ONS has a rich history developing both server side and web based software solutions. We pride ourselves on our clean, professional and scalable software that functions as expected while being delivered on time. Stop dealing with excuses.</p>
     </div>
     {/*Why Choose Me Section*/}

@@ -14,7 +14,7 @@ function MyProjectsPage() {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'}}>
-      <h1> My Projects</h1>
+      <h1 style={{fontSize: '34px', fontWeight: 'bold'}}>My Projects</h1>
     </div>
     <ModernProjectList/>
 

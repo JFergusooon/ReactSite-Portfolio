@@ -5,7 +5,7 @@ const ModernProjectList = () => {
     {
       name: "Battlemon",
       img: "images/Battlemon.png",
-      images: ["images/Battlemon.png", "images/Battlemon.png"],
+      images: ["images/BattlemonTitle.png", "images/BattlemonHome.png"],
       url: "https://jfergusooon.itch.io/battlemon",
       headline: "A monster-catching RPG game inspired by classic titles.",
       description: "Written in SwiftUI for macOs. Utilizing a small screen resolution, users can start their journey with their favorite starter, battle wild pokemon, grow your party, purchase items from the shop, store items in their bag, and complete their full 151 pokedex.",
@@ -66,7 +66,7 @@ const ModernProjectList = () => {
                             key={idx}
                             src={img}
                             alt={`${project.name} screenshot ${idx + 1}`}
-                            className="w-full h-32 object-cover rounded-xl shadow-lg bg-white p-2"
+                            className="w-full h-64 object-cover rounded-xl shadow-lg bg-white p-2"
                           />
                         ))}
                       </div>

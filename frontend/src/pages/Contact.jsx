@@ -15,7 +15,7 @@ function ContactPage() {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'}}>
-        <h1>Welcome to the Contact Page!</h1>
+        <h1 style={{fontSize: '34px', fontWeight: 'bold'}}>Welcome to the Contact Page!</h1>
     </div>
 
     <div>

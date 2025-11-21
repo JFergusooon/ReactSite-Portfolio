@@ -24,14 +24,14 @@ export default function ModernContact() {
 
   return (
     <div className="min-h-screen bg-gray-700 flex items-center justify-center p-6">
-      <div className="w-full max-w-2xl bg-gradient-to-br from-slate-400 to-slate-500 rounded-3xl shadow-2xl p-8 border-8 border-gray-800">
+      <div style={{display: 'flex', flexDirection: 'row', marginLeft: '22%'}}>
+        <div style={{display: 'flex', flexDirection: 'column', width: "800px", alignItems: 'center', textAlign: 'center', justifyContent: 'center'}} className="w-full max-w-2xl bg-gradient-to-br from-slate-400 to-slate-500 rounded-3xl shadow-2xl p-8 border-8 border-gray-800">
         {/* Header */}
         <div className="bg-gradient-to-r from-red-900 to-red-950 rounded-2xl p-6 mb-8">
           <h1 className="text-4xl font-bold text-center text-white">Contact Me</h1>
         </div>
-
         {/* Form Fields */}
-        <div className="space-y-6">
+        <div className="space-y-6" style={{width: '400px'}}>
           {/* Name Field */}
           <div>
             <label className="block text-gray-900 font-bold mb-2 flex items-center gap-2">
@@ -107,22 +107,29 @@ export default function ModernContact() {
           </div>
         </div>
 
-        {/* Contact Info */}
-        <div className="mt-8 bg-gradient-to-r from-gray-700 to-gray-800 rounded-2xl p-6">
+      
+      </div>
+
+      {/* Contact Info */}
+        <div className="mt-8 bg-gradient-to-r from-gray-700 to-gray-800 rounded-2xl p-6" style={{height: '250px', width: '400px'}}>
           <div className="text-center space-y-2">
             <p className="text-white font-semibold">Or reach out directly:</p>
             <p className="text-orange-300">
-              <strong className="text-white">Email:</strong> jfergusooon@gmail.com
+              <strong className="text-white">Email:</strong> <br />jfergusooon@gmail.com
             </p>
             <p className="text-orange-300">
-              <strong className="text-white">LinkedIn:</strong> https://www.linkedin.com/in/jeffrey-ferguson-developer/
+              <strong className="text-white">LinkedIn:</strong> 
+              <br />
+              linkedin.com/in/jeffrey-ferguson-developer/
             </p>
             <p className="text-orange-300">
-              <strong className="text-white">GitHub:</strong> https://github.com/JFergusooon
+              <strong className="text-white">GitHub:</strong>
+              <br /> github.com/JFergusooon
             </p>
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

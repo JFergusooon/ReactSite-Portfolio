@@ -13,7 +13,7 @@ function AboutPage() {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'}}>
-      <h1>A bit about me</h1>
+      <h1 style={{fontSize: '34px', fontWeight: 'bold'}}>A bit about me</h1>
     </div>
     <ModernResume />
     

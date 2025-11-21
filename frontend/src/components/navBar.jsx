@@ -27,7 +27,7 @@ function NavBar() {
           left: '50%',
           transform: 'translateX(-50%)',
           display: 'flex',
-          gap: '2px'
+          gap: '1px'
         }}
       >
         <Link to="/" className='navBarButton'>Home</Link>

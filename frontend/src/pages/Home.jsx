@@ -31,16 +31,12 @@ function HomePage() {
 
 
 
-    <div style={{display: 'flex', width: '100%', background: 'gray', alignContent: 'center'}}>
-      <div style={{background: 'slategray', width: '1000px', gap: '100px', margin: 'auto'}}>
-        <div style={{display: 'flex', flexDirection: 'row', marginLeft: '15%', gap: '20px'}}>
+    <div style={{display: 'flex', width: '100%', background: '#443f3d', alignContent: 'center'}}>
+      <div style={{background: '#443f3d', width: '1000px', gap: '100px', margin: 'auto'}}>
+        <div style={{display: 'flex', flexDirection: 'row', marginLeft: '15%', gap: '30px'}}>
           <div style={{display: 'flex', justifyContent: 'center'}}>
-            <img src='images/KeyboardIcon.png' alt='^' style={{width: '50px', height: '50px', marginTop: '50%'}}/>
+            <img src='images/KeyboardIcon.png' alt='^' style={{width: '50px', height: '50px', marginTop: '100%'}}/>
         </div>
-        
-
-
-
         <div style={{display: 'flex', flexDirection: 'column', height: '290px', padding: '20px', color: '#fff', alignItems: 'center', textAlign: 'left', gap: "10px", justifyContent: 'center'}}>
           <p style={{width: "320px", marginBottom: '25px', color: 'yellow'}}>Software Development</p>
           <p style={{width: '320px', textAlign: 'left',}}>Ferguson Software Solutions has a rich history developing both server side and web based software solutions. We pride ourselves on our clean, professional and scalable software that functions as expected while being delivered on time. Stop dealing with excuses.</p>
@@ -56,36 +52,9 @@ function HomePage() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {/*Why Choose Me Section*/}
-    <div style={{border: '2px solid black', width: '1000px', alignItems: 'center', margin: 'auto'}}>
-      <div style={{padding: '20px', background: '#f4f1ed', color: '#000', textAlign: 'center'}}>
+    <div style={{display: 'flex', width: '100%', background: '#443f3d', alignContent: 'center'}}>
+      <div style={{padding: '20px', background: '#f4f1ed', color: '#000', textAlign: 'center', width: '1000px', margin: 'auto', border: '3px solid black'}}>
           <div>
               <h2> Why Choose Me? </h2>
               <p> I am dedicated to delivering high-quality software solutions that meet your needs. Here are some reasons to choose me for your next project. </p>

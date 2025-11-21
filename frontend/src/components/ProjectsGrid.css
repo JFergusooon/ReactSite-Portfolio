@@ -3,14 +3,14 @@
     background-color: #443f3d;
     color: #fff;
     text-align: center;
-    width: 90%;
-    min-height: 145px;
-    max-height: 145px;
+    width: 100%;
+    min-height: 170px;
+    max-height: 170px;
 }
 
 .home-project-headline {
     font-size: 14px;
-    margin: 10px 0;
+    margin-bottom: 20px;
 }
 
 .home-project-meta-row {
@@ -24,14 +24,12 @@
 .project-column {
     justify-content: center;
     text-align: center;
-    background: yellow;
     width: 15%;
     min-height: 400px;
     max-height: 400px;
 }
 
 .home-project-image {
-    padding-top: 10px;
     width: 200px;
     height: auto;
     border-radius: 8px;

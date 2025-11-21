@@ -5,15 +5,16 @@ const ProjectsGrid = () => {
 
 
   return (
-    <div className="home-project-list">
+    <div className="home-project-list ">
     
       {/* Battlemon Project Entry */}
-      <div key="" className="project-column">
+      <div key="" className="project-column bg-gradient-to-br from-yellow-400 to-orange-500"  style={{border: 'solid 2px black'}}>
         <div className='home-project-image-container'>
           <img
             src={`images/Battlemon.png`}
             alt={"Battlemon"}
             className="home-project-image"
+            style={{border: 'solid 1px black'}}
           />
 
           
@@ -38,12 +39,13 @@ const ProjectsGrid = () => {
       </div>
 
       {/* Tracker Project Entry */}
-      <div key="" className="project-column">
+      <div key="" className="project-column bg-gradient-to-br from-yellow-400 to-orange-500" style={{border: 'solid 2px black'}}>
         <div  className='home-project-image-container'>
           <img
             src={`images/Tracker.png`}
             alt={"Battlemon"}
             className="home-project-image"
+            style={{border: 'solid 1px black'}}
           />
 
           

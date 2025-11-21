@@ -25,14 +25,14 @@ export default function ModernFooter() {
       <div className="bg-gradient-to-br from-slate-400 to-slate-500 py-3 px-4 items-center text-center md:text-left">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center items-center"
-                style={{ padding: '0px', borderRadius: '20px', height: '280px' }}>
+                style={{ padding: '0px', borderRadius: '20px', height: '220px' }}>
             
-            <div className="bg-gradient-to-br from-gray-700 to-gray-800 rounded-3xl p-3 border-4 border-gray-900" style={{display: 'flex', flexDirection: 'row', gap: '150px', marginRight: '300px'}}>
+            <div className="p-3" style={{display: 'flex', flexDirection: 'row', gap: '100px', marginRight: '10%'}}>
               <div>
-                <h2 className="text-3xl font-bold text-white mb-6 text-left border-b-4 border-orange-600 pb-3">
+                <h3 className="text-3xl font-bold text-white mb-1 text-left border-b-4 border-orange-600 pb-2">
                   Contact Information
-                </h2>
-                <div className="space-y-4">
+                </h3>
+                <div className="space-y-2">
                 {/* Address */}
                 <div className="flex items-start gap-3">
                   <MapPin className="text-orange-500 mt-1 flex-shrink-0" size={24} />

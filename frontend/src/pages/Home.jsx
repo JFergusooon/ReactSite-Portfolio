@@ -15,8 +15,8 @@ function HomePage() {
       <h1 style={{fontSize: '34px', fontWeight: 'bold'}}>Welcome to the Home Page!</h1>
     </div>
 
-    <div style={{height: '500px'}} className="bg-gradient-to-br from-orange-500 to-red-800">
-    </div>
+    {/*<div style={{height: '500px'}} className="bg-gradient-to-br from-orange-500 to-red-800">
+    </div>*/}
 
 
 

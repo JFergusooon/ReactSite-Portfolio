@@ -50,18 +50,16 @@
   margin-bottom: 3px;
   padding: 10px 20px;
   height: 45px;
-  background-color: #fff;
+  background-color: #282c34;
   text-decoration: none;
   border-radius: 2px;
-  width: 150px;
-  border: 1px solid black;
-  color: black;
+  width: 125px;
+  color: white;
   border-radius: 6px;
 }
 
 .navBarButton:hover {
-  background-color: #e24a03;
-  color: #fff;
+  color: #e24a03;
   cursor: pointer;
 }
 

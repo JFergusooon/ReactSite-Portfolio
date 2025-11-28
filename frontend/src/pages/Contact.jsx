@@ -10,7 +10,7 @@ import ModernFooter from '../Modern Components/ModernFooterComponent';
 function ContactPage() {
   return <>
     <NavBar/>
-        <div style={{width: '100%', height: '250px', textAlign: 'center', marginTop: '2px', color: "#fff", 
+        <div style={{width: '100%', height: '250px', textAlign: 'center', color: "#fff", 
             backgroundImage: "url('images/Background.png')", display: 'flex', justifyContent: 'center', alignItems: 'center', 
             backgroundSize: 'cover',
             backgroundPosition: 'center',

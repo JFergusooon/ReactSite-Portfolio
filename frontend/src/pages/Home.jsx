@@ -7,7 +7,7 @@ import ModernFooter from '../Modern Components/ModernFooterComponent';
 function HomePage() {
   return <>
     <NavBar/>
-    <div style={{width: '100%', height: '250px', textAlign: 'center', marginTop: '2px', color: "#fff", 
+    <div style={{width: '100%', height: '250px', textAlign: 'center', color: "#fff", 
             backgroundImage: "url('images/Background.png')", display: 'flex', justifyContent: 'center', alignItems: 'center', 
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -31,8 +31,8 @@ function HomePage() {
 
 
 
-    <div style={{display: 'flex', width: '100%', background: '#443f3d', alignContent: 'center'}}>
-      <div style={{background: '#443f3d', width: '1000px', gap: '100px', margin: 'auto'}}>
+    <div style={{display: 'flex', width: '100%', background: 'gray', alignContent: 'center'}}>
+      <div style={{background: '#69625fff', width: '1000px', gap: '100px', margin: 'auto'}}>
         <div style={{display: 'flex', flexDirection: 'row', marginLeft: '15%', gap: '30px'}}>
           <div style={{display: 'flex', justifyContent: 'center'}}>
             <img src='images/KeyboardIcon.png' alt='^' style={{width: '50px', height: '50px', marginTop: '100%'}}/>
@@ -56,7 +56,7 @@ function HomePage() {
     <div style={{display: 'flex', width: '100%', background: '#443f3d', alignContent: 'center'}}>
       <div style={{padding: '20px', background: '#f4f1ed', color: '#000', textAlign: 'center', width: '1000px', margin: 'auto', border: '3px solid black'}}>
           <div>
-              <h2> Why Choose Me? </h2>
+              <h2> <strong>Why Choose Me?</strong> </h2>
               <p> I am dedicated to delivering high-quality software solutions that meet your needs. Here are some reasons to choose me for your next project. </p>
               <div style = {{display: 'flex', flexDirection: 'row', gap: '5%', width: '80%', justifyContent: 'center'}}>
                 <div style={{textAlign:'left' , alignItems: 'left', justifyContent: 'left'}}>
@@ -81,7 +81,7 @@ function HomePage() {
       </div>
     </div>
 
-    <div style={{padding: '20px', background: '#443f3d', color: '#fff', textAlign: 'center'}}>
+    <div style={{padding: '20px', background: '#69625fff', color: '#fff', textAlign: 'center'}}>
         <div>
             <h2> Featured Projects </h2>
             <p> Here are some of my highlighted projects showcasing my skills and expertise in software development. </p>

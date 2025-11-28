@@ -6,7 +6,7 @@ function NavBar() {
     <nav 
       style={{
         width: '100%',
-        position: 'relative',
+        position: 'fixed',
         backgroundColor: '#282c34',
         padding: '10px 20px',
         height: '50px',
@@ -24,8 +24,8 @@ function NavBar() {
       <div 
         style={{
           position: 'absolute',
-          left: '50%',
-          transform: 'translateX(-50%)',
+          left: '45%',
+          transform: 'translateX(50%)',
           display: 'flex',
           gap: '1px'
         }}
@@ -35,6 +35,7 @@ function NavBar() {
         <Link to="/about" className='navBarButton'>About Me</Link>
         {/*<Link to="/services" className='navBarButton'>Services</Link>*/}
         <Link to="/contact" className='navBarButton'>Contact</Link>
+        <Link to='/resume' className='navBarButton'>Resume</Link>
       </div>
 
     </nav>

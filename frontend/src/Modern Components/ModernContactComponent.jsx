@@ -75,7 +75,7 @@ export default function ModernContact() {
               name="role"
               value={formData.role}
               onChange={handleChange}
-              placeholder="Developer, Designer, Client, etc."
+              placeholder="Developer, Designer, Frontend, etc."
               className="w-full px-4 py-3 rounded-xl border-4 border-gray-700 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-600 transition-colors"
             />
           </div>
@@ -120,7 +120,7 @@ export default function ModernContact() {
             <p className="text-orange-300">
               <strong className="text-white">LinkedIn:</strong> 
               <br />
-              linkedin.com/in/jeffrey-ferguson-developer/
+              linkedin.com/in/jeffrey-ferguson-dev/
             </p>
             <p className="text-orange-300">
               <strong className="text-white">GitHub:</strong>

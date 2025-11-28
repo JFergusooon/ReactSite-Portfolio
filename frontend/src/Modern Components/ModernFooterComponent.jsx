@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
 
 export default function ModernFooter() {
   const contactInfo = {
@@ -14,9 +14,7 @@ export default function ModernFooter() {
 
   const socialLinks = [
     { icon: Github, url: "https://github.com/jfergusooon", label: "GitHub" },
-    { icon: Linkedin, url: "https://linkedin.com/in/jeffreyferguson", label: "LinkedIn" },
-    { icon: Twitter, url: "https://twitter.com/jeffreyferguson", label: "Twitter" },
-    { icon: Mail, url: "mailto:jeffrey.ferguson@example.com", label: "Email" }
+    { icon: Linkedin, url: "https://www.linkedin.com/in/jeffrey-ferguson-dev/", label: "LinkedIn" }
   ];
 
   return (

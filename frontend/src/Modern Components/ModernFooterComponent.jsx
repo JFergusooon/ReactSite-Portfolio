@@ -5,7 +5,7 @@ export default function ModernFooter() {
   const contactInfo = {
     address: {
       line1: "Ferguson Software Solutions",
-      line2: "Salt Lake City, UT",
+      line2: "Clearwater, FL",
       line3: "United States"
     },
     phone: "385-499-1578",
@@ -83,7 +83,7 @@ export default function ModernFooter() {
 
       {/* Bottom Footer Bar */}
       <div className="bg-gray-900 py-6 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col items-center gap-4">
+        <div className="max-w-7xl mx-auto flex flex-row items-center gap-4">
           {/* Copyright */}
           <div className="text-gray-400 text-sm text-center md:text-left">
             © {new Date().getFullYear()} Jeffrey Ferguson - <a href="/" className="text-orange-400 hover:text-orange-300">Terms of Service</a>

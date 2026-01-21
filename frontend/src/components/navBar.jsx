@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <nav 
       style={{
-        width: '100%',
+        width: '100vw',
         position: 'fixed',
         backgroundColor: '#282c34',
         padding: '10px 20px',
@@ -21,15 +21,11 @@ function NavBar() {
       </p>
 
       {/* Perfect Center Area */}
-      <div 
-        style={{
-          position: 'absolute',
-          left: '45%',
-          transform: 'translateX(50%)',
-          display: 'flex',
-          gap: '1px'
-        }}
-      >
+      <div style={{ backgroundColor: "#282c34", width: "30px", height: "5px", marginLeft: "auto", marginRight: "auto"
+       }}></div>
+
+
+      <div style={{}}>
         <Link to="/" className='navBarButton'>Home</Link>
         <Link to="/projects" className='navBarButton'>My Projects</Link>
         <Link to="/about" className='navBarButton'>About Me</Link>

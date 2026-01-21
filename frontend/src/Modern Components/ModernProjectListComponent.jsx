@@ -34,7 +34,7 @@ const ModernProjectList = () => {
     },
     {
       name: "BookHook",
-      img: "images/",
+      img: "images/BookHook.png",
       url: "/projects",
       headline: "An online bookstore with a vast collection of books.",
       description: "An online bookstore with a vast collection of books.",

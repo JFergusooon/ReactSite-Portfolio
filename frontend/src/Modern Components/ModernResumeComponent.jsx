@@ -70,7 +70,7 @@ export default function ModernResume() {
             
             <div className="flex gap-4 flex-1">
               {/* Work Experience - Left */}
-              <div className="w-1/2 bg-gradient-to-br from-orange-600 to-orange-700 rounded-3xl p-6 flex flex-col">
+              <div className="w-1/2 bg-gradient-to-br from-orange-600 to-orange-700 rounded-3xl p-6 flex flex-col" style={{minHeight: "540px", maxHeight: "540px"}}>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Work Experience</h3>
                 <div className="space-y-4 flex-1">
                   {experience.map((job, idx) => (

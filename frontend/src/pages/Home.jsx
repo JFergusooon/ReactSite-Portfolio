@@ -16,7 +16,9 @@ function HomePage() {
 
   const toggleOurMissionVisibility = () => {
     console.log("Our Mission button clicked");
-    setIsOurMissionVisible(prev => !prev); // invert the boolean
+    if(!isOurMissionVisible) {
+      setIsOurMissionVisible(prev => !prev); 
+    }
     if (isContactUsVisible) {
       setIsContactUsVisible(false);
     }
@@ -27,7 +29,9 @@ function HomePage() {
 
   const toggleHistoryVisibility = () => {
     console.log("History button clicked");
-    setIsHistoryVisible(prev => !prev); // invert the boolean
+    if(!isHistoryVisible) {
+      setIsHistoryVisible(prev => !prev); 
+    }
     if (isContactUsVisible) {
       setIsContactUsVisible(false);
     }
@@ -38,7 +42,9 @@ function HomePage() {
 
   const toggleContactUsVisibility = () => {
     console.log("Contact Us button clicked");
-    setIsContactUsVisible(prev => !prev);
+    if(!isContactUsVisible) {
+      setIsContactUsVisible(prev => !prev); 
+    }
     if (isOurMissionVisible) {
       setIsOurMissionVisible(false);
     }
@@ -57,22 +63,7 @@ function HomePage() {
       <h1 style={{fontSize: '34px', fontWeight: 'bold'}}>Welcome to Ferguson Software Solutions!</h1>
     </div>
 
-    {/*<div style={{height: '500px'}} className="bg-gradient-to-br from-orange-500 to-red-800">
-    </div>*/}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    {/*Software Development Section*/}
     <div style={{display: 'flex', width: '100%', background: '#dbd8d5ff', alignContent: 'center'}}>
       <div style={{background: '#69625fff', width: '1000px', gap: '100px', margin: 'auto'}}>
         <div style={{display: 'flex', flexDirection: 'row', marginLeft: '15%', gap: '30px'}}>
@@ -80,9 +71,9 @@ function HomePage() {
             <img src='images/KeyboardIcon.png' alt='^' style={{width: '50px', height: '50px', marginTop: '100%'}}/>
         </div>
         <div style={{display: 'flex', flexDirection: 'column', height: '250px', padding: '20px', color: '#fff', alignItems: 'center', textAlign: 'left', gap: "10px", justifyContent: 'center'}}>
-          <p style={{width: "320px", marginBottom: '15px', color: 'yellow'}}>Software Development</p>
+          <p style={{width: "320px", marginBottom: '15px', color: 'yellow', paddingTop: '10px'}}>Software Development</p>
           {/*<p style={{width: '320px', textAlign: 'left',}}>Ferguson Software Solutions has a rich history developing both server side and web based software solutions. We pride ourselves on our clean, professional and scalable software that functions as expected while being delivered on time. Stop dealing with excuses.</p>*/}
-          <p style={{width: '320px', textAlign: 'left',}}>I, Jeffrey Ferguson, have a rich history developing both server side and web based software solutions. I pride myself on writing clean, professional, and scalable software that functions to incredible standards while being delivered on time. We make our clients feel valued and heard throughout the development process. </p>
+          <p style={{width: '320px', textAlign: 'left', paddingBottom: '15px'}}>I, Jeffrey Ferguson, have a rich history developing both server side and web based software solutions. I pride myself on writing clean, professional, and scalable software that functions to incredible standards while being delivered on time. We make our clients feel valued and heard throughout the development process. </p>
         </div>
         </div>
         
@@ -91,17 +82,17 @@ function HomePage() {
       
     
 
-
-
-
-
     {/*Why Choose Me Section*/}
     <div style={{display: 'flex', width: '100%', background: '#f4f1ed', alignContent: 'center'}}>
       <div style={{padding: '20px', background: '#f4f1ed', color: '#000', textAlign: 'center', width: '1000px', margin: 'auto', border: '3px solid black'}}>
-          <div>
+          <div style={{justifyContent: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px'}}>
               <h2> <strong>Why Choose Me?</strong> </h2>
-              <p> I am dedicated to delivering high-quality software solutions that meet your needs. Here are some reasons to choose me for your next project. </p>
-              <div className="wrapper" style = {{gap: '5%', width: '80%', justifyContent: 'center'}}>
+              <p> I am dedicated to delivering high-quality software solutions that meet your needs. Here are some reasons to <br></br>choose me for your next project. </p>
+              <div style={{width: "100%", height: "2px", background: 'black', borderRadius: '5px', marginBottom: '10px'}}></div>
+              
+              
+              <div className="wrapper" style = {{gap: '5%', width: '100%', justifyContent: 'center'}}>
+                {/* Unordered List */}
                 <div className="box" style={{textAlign:'left' , alignItems: 'left', justifyContent: 'left'}}>
                   <ul class='checklist' style={{padding: 0, width: '100%', gap:'5px'}}>
                       <li style={{maxWidth: '420px'}}><strong>Team Experience.</strong> 3+ years of industry experience with agile teams in software, website and system development.</li>
@@ -111,7 +102,8 @@ function HomePage() {
                   </ul>
                 </div>
 
-                <div className="box" style = {{display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', marginTop: '10px', width: '10%'}}>
+                {/* Dropdown Section */}
+                <div className="box" style = {{display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', marginTop: '10px', width: '30%'}}>
                   <button className={isOurMissionVisible ? "bg-gradient-to-br from-slate-400 to-slate-500" : ""} style={{height: '50px', width: '300px'}} onClick={toggleOurMissionVisibility}>Our Mission     {isOurMissionVisible ? <KeyboardArrowDownIcon /> : <KeyboardArrowUpIcon />}</button>
                   {isOurMissionVisible && (
                   <p style={{width: '300px', textAlign: 'left'}}>Ferguson Software Solutions' Mission is to deliver reliable, efficient software that helps businesses work smarter and grow faster. </p>)}

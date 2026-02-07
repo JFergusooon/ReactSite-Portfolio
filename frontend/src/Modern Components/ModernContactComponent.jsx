@@ -38,7 +38,7 @@ export default function ModernContact() {
   return (
     <div className="bg-gray-700 flex items-center justify-center p-6">
       
-      <div style={{display: 'flex', flexDirection: 'row', marginLeft: '22%',}}>
+      <div style={{display: 'flex', flexDirection: 'row'}}>
         
         <div style={{display: 'flex', flexDirection: 'column', width: "800px", alignItems: 'center', textAlign: 'center', justifyContent: 'center'}} className="w-full max-w-2xl bg-gradient-to-br from-slate-400 to-slate-500 rounded-3xl shadow-2xl p-8 border-8 border-gray-800">
         <form onSubmit={handleSubmit}>
@@ -135,25 +135,25 @@ export default function ModernContact() {
       </div>
 
       {/* Contact Info */}
-        <div className="mt-8 bg-gradient-to-r from-gray-700 to-gray-800 rounded-2xl p-6" style={{height: '250px', width: '400px'}}>
-          <div className="text-center space-y-2">
-            <p className="text-white font-semibold">Or reach out directly:</p>
-            <p className="text-orange-300">
-              <strong className="text-white">Email:</strong> <br />jfergusooon@gmail.com
-            </p>
-            <p className="text-orange-300">
-              <strong className="text-white">LinkedIn:</strong> 
-              <br />
-              linkedin.com/in/jeffrey-ferguson-dev/
-            </p>
-            <p className="text-orange-300">
-              <strong className="text-white">GitHub:</strong>
-              <br /> github.com/JFergusooon
-            </p>
-          </div>
+      <div className="mt-8 bg-gradient-to-r from-gray-700 to-gray-800 rounded-2xl p-6" style={{height: '250px', width: '400px'}}>
+        <div className="text-center space-y-2">
+          <p className="text-white font-semibold">Or reach out directly:</p>
+          <p className="text-orange-300">
+            <strong className="text-white">Email:</strong> <br />jfergusooon@gmail.com
+          </p>
+          <p className="text-orange-300">
+            <strong className="text-white">LinkedIn:</strong> 
+            <br />
+            linkedin.com/in/jeffrey-ferguson-dev/
+          </p>
+          <p className="text-orange-300">
+            <strong className="text-white">GitHub:</strong>
+            <br /> github.com/JFergusooon
+          </p>
         </div>
       </div>
-      
+
     </div>
+  </div>
   );
 }

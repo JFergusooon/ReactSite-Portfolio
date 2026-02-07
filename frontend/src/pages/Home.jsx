@@ -103,7 +103,7 @@ function HomePage() {
                 </div>
 
                 {/* Dropdown Section */}
-                <div className="box" style = {{display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '10px', maxWidth: '300px', width: '100%', textAlign: 'center', alignItems: 'center', gap: '10px'}}>
+                <div className="box" style = {{display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '10px', maxWidth: '500px', width: '100%', textAlign: 'center', alignItems: 'center', gap: '10px'}}>
                   <button className={isOurMissionVisible ? "bg-gradient-to-br from-slate-400 to-slate-500" : ""} style={{height: '50px', width: '300px'}} onClick={toggleOurMissionVisibility}>Our Mission     {isOurMissionVisible ? <KeyboardArrowDownIcon /> : <KeyboardArrowUpIcon />}</button>
                   {isOurMissionVisible && (
                   <p style={{width: '300px', textAlign: 'left'}}>Ferguson Software Solutions' Mission is to deliver reliable, efficient software that helps businesses work smarter and grow faster. </p>)}

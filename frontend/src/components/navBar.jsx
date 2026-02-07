@@ -14,11 +14,8 @@ function NavBar() {
       </p>
 
       {/* Hamburger (mobile only) */}
-      <div
-        className="hamburger"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        ☰
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? '✕' : '☰'}
       </div>
 
       {/* Nav Links */}

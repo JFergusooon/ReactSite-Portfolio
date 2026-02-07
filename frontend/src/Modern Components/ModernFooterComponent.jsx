@@ -4,7 +4,8 @@ import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
 export default function ModernFooter() {
   const contactInfo = {
     address: {
-      line1: "Ferguson Software Solutions",
+      //line1: "Ferguson Software Solutions",
+      line1: "",
       line2: "Clearwater, FL",
       line3: "United States"
     },

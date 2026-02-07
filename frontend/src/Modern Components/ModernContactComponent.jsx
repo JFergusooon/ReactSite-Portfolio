@@ -1,113 +1,137 @@
 import React, { useState } from 'react';
 import { Mail, User, Briefcase, MessageSquare } from 'lucide-react';
+import emailjs from "emailjs-com";
 
 export default function ModernContact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    role: '',
-    description: ''
-  });
+  const [form, setForm] = useState({
+      name: "",
+      email: "",
+      role: "",
+      description: ""
+    });
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = () => {
-    console.log('Form submitted:', formData);
-    // Add your form submission logic here
-    alert('Message sent! (This is a demo - connect to your backend)');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Replace these with your own EmailJS values
+    const SERVICE_ID = "service_33autvw";
+    const TEMPLATE_ID = "template_mqakyxo";
+    const PUBLIC_KEY = "031phQOO8bcKWzLhr";
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, form, PUBLIC_KEY)
+      .then(
+        (result) => {
+          alert("Message sent! Thank you.");
+          setForm({ name: "", email: "", role: "", desc: "" }); // reset form
+        },
+        (error) => {
+          alert("Failed to send message. Try again.");
+          console.error(error.text);
+        }
+      );
   };
 
   return (
-    <div className="min-h-screen bg-gray-700 flex items-center justify-center p-6">
-      <div style={{display: 'flex', flexDirection: 'row', marginLeft: '22%'}}>
+    <div className="bg-gray-700 flex items-center justify-center p-6">
+      
+      <div style={{display: 'flex', flexDirection: 'row', marginLeft: '22%',}}>
+        
         <div style={{display: 'flex', flexDirection: 'column', width: "800px", alignItems: 'center', textAlign: 'center', justifyContent: 'center'}} className="w-full max-w-2xl bg-gradient-to-br from-slate-400 to-slate-500 rounded-3xl shadow-2xl p-8 border-8 border-gray-800">
-        {/* Header */}
-        <div className="bg-gradient-to-r from-red-900 to-red-950 rounded-2xl p-6 mb-8">
-          <h1 className="text-4xl font-bold text-center text-white">Contact Me</h1>
-        </div>
+        <form onSubmit={handleSubmit}>
         {/* Form Fields */}
-        <div className="space-y-6" style={{width: '400px'}}>
-          {/* Name Field */}
-          <div>
-            <label className="block text-gray-900 font-bold mb-2 flex items-center gap-2">
-              <User size={20} className="text-orange-600" />
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Your full name"
-              className="w-full px-4 py-3 rounded-xl border-4 border-gray-700 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-600 transition-colors"
-            />
+        <div className="space-y-6" style={{width: '600px', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '40px'}}>
+          <div style={{display: 'flex', flexDirection: 'column', gap: '4px'}}>
+            {/* Name Field */}
+            <div>
+              <label className="block text-gray-900 font-bold mb-2 flex items-center gap-2">
+                <User size={20} className="text-orange-600" />
+                Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="Your full name"
+                className="px-4 py-3 rounded-xl border-4 border-gray-700 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-600 transition-colors"
+                style= {{width: '300px', height: '45px'}}
+              />
+            </div>
+
+            {/* Email Field */}
+            <div>
+              <label className="block text-gray-900 font-bold mb-2 flex items-center gap-2">
+                <Mail size={20} className="text-orange-600" />
+                Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                placeholder="you@example.com"
+                className="px-4 py-3 rounded-xl border-4 border-gray-700 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-600 transition-colors"
+                style= {{width: '300px', height: '45px'}}
+              />
+            </div>
+
+            {/* Role Field */}
+            <div>
+              <label className="block text-gray-900 font-bold mb-2 flex items-center gap-2">
+                <Briefcase size={20} className="text-orange-600" />
+                Role
+              </label>
+              <input
+                type="text"
+                name="role"
+                value={form.role}
+                onChange={handleChange}
+                placeholder="Developer, Designer, Frontend, etc."
+                className="px-4 py-3 rounded-xl border-4 border-gray-700 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-600 transition-colors"
+                style= {{width: '300px', height: '45px'}}
+              />
+            </div>
           </div>
 
-          {/* Email Field */}
           <div>
-            <label className="block text-gray-900 font-bold mb-2 flex items-center gap-2">
-              <Mail size={20} className="text-orange-600" />
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="you@example.com"
-              className="w-full px-4 py-3 rounded-xl border-4 border-gray-700 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-600 transition-colors"
-            />
+            {/* Description Field */}
+            <div>
+              <label className="block text-gray-900 font-bold mb-2 flex items-center gap-2">
+                <MessageSquare size={20} className="text-orange-600" />
+                Description
+              </label>
+              <input
+                name="description"
+                value={form.description}
+                onChange={handleChange}
+                placeholder="Tell me about your request..."
+                rows="5"
+                className="px-4 py-3 rounded-xl border-4 border-gray-700 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-600 transition-colors resize-none"
+                style= {{width: '250px', height: '232px'}}
+              />
+            </div>
           </div>
+          
 
-          {/* Role Field */}
-          <div>
-            <label className="block text-gray-900 font-bold mb-2 flex items-center gap-2">
-              <Briefcase size={20} className="text-orange-600" />
-              Role
-            </label>
-            <input
-              type="text"
-              name="role"
-              value={formData.role}
-              onChange={handleChange}
-              placeholder="Developer, Designer, Frontend, etc."
-              className="w-full px-4 py-3 rounded-xl border-4 border-gray-700 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-600 transition-colors"
-            />
-          </div>
+          
 
-          {/* Description Field */}
-          <div>
-            <label className="block text-gray-900 font-bold mb-2 flex items-center gap-2">
-              <MessageSquare size={20} className="text-orange-600" />
-              Description
-            </label>
-            <textarea
-              name="description"
-              value={formData.description}
-              onChange={handleChange}
-              placeholder="Tell me about your request..."
-              rows="5"
-              className="w-full px-4 py-3 rounded-xl border-4 border-gray-700 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-600 transition-colors resize-none"
-            />
-          </div>
-
-          {/* Submit Button */}
+          
+        </div>
+        {/* Submit Button */}
           <div className="flex justify-center pt-4">
             <button
+              type="submit"
               onClick={handleSubmit}
               className="bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white font-bold py-4 px-12 rounded-2xl shadow-lg transform transition-all hover:scale-105 active:scale-95"
             >
               Send Message
             </button>
           </div>
-        </div>
-
-      
+        </form>
       </div>
 
       {/* Contact Info */}

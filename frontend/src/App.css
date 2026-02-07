@@ -37,31 +37,7 @@
   }
 }
 
-.navBarDiv {
-  height: '40px';
-  width: '100%';
-  display: 'flex';
-  justify-content: 'center';
-  background-color: '#fff';
-  color: #000;
-}
 
-.navBarButton {
-  margin-bottom: 3px;
-  padding: 10px 20px;
-  height: 45px;
-  background-color: #282c34;
-  text-decoration: none;
-  border-radius: 2px;
-  width: 20%;
-  color: white;
-  border-radius: 6px;
-}
-
-.navBarButton:hover {
-  color: #e24a03;
-  cursor: pointer;
-}
 
 .aboutMeSection {
   display: flex;

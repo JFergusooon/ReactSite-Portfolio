@@ -1,0 +1,83 @@
+.navbar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: #282c34;
+  padding: 10px 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Title */
+.navbar-title {
+  color: white;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+/* Links (desktop) */
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 15px;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  color: white;
+  font-size: 28px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #282c34;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
+
+.navBarDiv {
+  height: '40px';
+  width: '100%';
+  display: 'flex';
+  justify-content: 'center';
+  background-color: '#fff';
+  color: #000;
+}
+
+.navBarButton {
+  margin-bottom: 3px;
+  padding: 10px 10px;
+  height: 45px;
+  background-color: #282c34;
+  text-decoration: none;
+  border-radius: 2px;
+  width: 24%;
+  color: white;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.navBarButton:hover {
+  color: #e24a03;
+  cursor: pointer;
+}

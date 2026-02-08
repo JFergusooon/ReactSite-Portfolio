@@ -24,10 +24,10 @@ const ModernProjectList = () => {
     },
     {
       name: "InstaConnect",
-      img: "images/",
+      img: "images/InstantConnect.png",
       url: "/projects",
       headline: "A social media platform to connect with friends instantly.",
-      description: "A social media platform to connect with friends instantly.",
+      description: "Coded in JavaScript with React for the frontend. The backend consists of several Docker containers. These microservices are using Java with SpringBoot, and both MongoDB and MySQL for data storage. Users can create profiles, post updates, and connect with friends in real-time.",
       platform: "Web",
       releaseDate: "2022",
       link: "jferguson-dev.com/instantconnect"

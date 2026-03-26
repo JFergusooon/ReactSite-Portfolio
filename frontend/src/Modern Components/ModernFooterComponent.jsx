@@ -6,7 +6,7 @@ export default function ModernFooter() {
     address: {
       //line1: "Ferguson Software Solutions",
       line1: "",
-      line2: "Clearwater, FL",
+      line2: "Dryden, VA",
       line3: "United States"
     },
     phone: "385-499-1578",

@@ -126,7 +126,7 @@ function HomePage() {
                     
                     <div>
                       <p style={{width: '215px'}}>Ferguson Software Solutions</p>
-                      <p style={{width: '215px'}}>Bristol, Tennessee</p>
+                      <p style={{width: '215px'}}>Dryden, Virginia</p>
                       <p style={{width: '215px'}}>385-499-1578</p>
                       <p style={{width: '215px'}}>JFergusooon@gmail.com</p>
                     </div>

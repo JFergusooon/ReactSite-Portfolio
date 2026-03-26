@@ -18,11 +18,19 @@ function ResumePage() {
         <h1 style={{fontSize: '34px', fontWeight: 'bold'}}>Resume</h1>
     </div>
 
-    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#ddd6d6ff', height: '700px'}}>
-        <iframe class='frame' src={'images/Resume.png'} title={'ResumePdf'}
-        style={{height: '500px', width: '100%'}}/>
-    </div>
-
+    <div className = "bg-gray-900 py-6 px-6" style={{
+  display: 'flex',
+  justifyContent: 'center',
+}}>
+  <img className='frame' src={'images/JFerguson_SE_Resume.png'} alt="Resume" style={{ width: "500px", height: "650px" }} />
+  <div style={{ width: "25px", height: "650px", background: 'black' }}></div>
+  <img 
+    className='frame'
+    src={'images/JFerguson_SDET_Resume.png'}
+    alt="Resume"
+    style={{ width: "500px", height: "650px" }}
+  />
+</div>
     <ModernFooter />
   </>
 }

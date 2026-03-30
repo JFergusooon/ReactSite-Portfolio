@@ -7,6 +7,7 @@ import ModernFooter from '../Modern Components/ModernFooterComponent';
 import { useState } from "react";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import ModernResume from '../Modern Components/ModernResumeComponent'
 
 function HomePage() {
 
@@ -60,8 +61,9 @@ function HomePage() {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'}}>
-      <h1 style={{fontSize: '34px', fontWeight: 'bold'}}>Welcome to Ferguson Software Solutions!</h1>
     </div>
+
+    <ModernResume />
 
     {/*Software Development Section*/}
     <div style={{display: 'flex', width: '100%', background: '#dbd8d5ff', alignContent: 'center'}}>
@@ -139,12 +141,31 @@ function HomePage() {
       </div>
     </div>
 
+    <div className = "bg-gray-900 py-6 px-6" style={{
+  display: 'flex',
+  justifyContent: 'center',
+}}>
+  <img className='frame' src={'images/JFerguson_SE_Resume.png'} alt="Resume" style={{ width: "500px", height: "650px" }} />
+  <div style={{ width: "25px", height: "650px", background: 'black' }}></div>
+  <img 
+    className='frame'
+    src={'images/JFerguson_SDET_Resume.png'}
+    alt="Resume"
+    style={{ width: "500px", height: "650px" }}
+  />
+</div>
+
+
+
     <div style={{padding: '20px', background: '#69625fff', color: '#fff', textAlign: 'center'}}>
         <div>
             <h2> Featured Projects </h2>
             <p> Here are some of my highlighted projects showcasing my skills and expertise in software development. </p>
         </div>
     </div>
+
+
+
 
     <div>
       {/* Add project components or links here */}

@@ -20,67 +20,6 @@ export default function ModernFooter() {
 
   return (
     <footer className="bg-gray-700 border-t-8 border-gray-900">
-      {/* Main Footer Content */}
-      <div className="bg-gradient-to-br from-slate-400 to-slate-500 py-3 px-4 items-center text-center md:text-left">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-center items-center"
-                style={{ padding: '0px', borderRadius: '20px', height: '220px' }}>
-            
-            <div className="p-3" style={{display: 'flex', flexDirection: 'row', gap: '100px', marginRight: '10%'}}>
-              <div>
-                <h3 className="text-3xl font-bold text-white mb-1 text-left border-b-4 border-orange-600 pb-2">
-                  Contact Information
-                </h3>
-                <div className="space-y-2">
-                {/* Address */}
-                <div className="flex items-start gap-3">
-                  <MapPin className="text-orange-500 mt-1 flex-shrink-0" size={24} />
-                  <div>
-                    <p className="text-white font-semibold">Address:</p>
-                    <p className="text-gray-300">{contactInfo.address.line1}</p>
-                    <p className="text-gray-300">{contactInfo.address.line2}</p>
-                    <p className="text-gray-300">{contactInfo.address.line3}</p>
-                  </div>
-                </div>
-
-                {/* Phone */}
-                <div className="flex items-center gap-3">
-                  <Phone className="text-orange-500 flex-shrink-0" size={24} />
-                  <div>
-                    <p className="text-white font-semibold inline">Phone: </p>
-                    <a href={`tel:${contactInfo.phone}`} className="text-orange-300 hover:text-orange-200">
-                      {contactInfo.phone}
-                    </a>
-                  </div>
-                </div>
-
-                {/* Email */}
-                <div className="flex items-center gap-3">
-                  <Mail className="text-orange-500 flex-shrink-0" size={24} />
-                  <div>
-                    <p className="text-white font-semibold inline">Email: </p>
-                    <a href={`mailto:${contactInfo.email}`} className="text-orange-300 hover:text-orange-200 break-all">
-                      {contactInfo.email}
-                    </a>
-                  </div>
-                </div>
-              </div>
-              </div>
-              
-              <div className="flex items-center justify-center">
-                <img
-                  src="/images/CompanyLogo.png"
-                  alt="Footer Illustration"
-                  className="rounded-3xl"
-                  style={{width: '200px', height: '200px', objectFit: 'cover'}}
-                />
-              </div>
-              
-            </div>
-
-          </div>
-        </div>
-      </div>
 
       {/* Bottom Footer Bar */}
       <div className="bg-gray-900 py-6 px-6">

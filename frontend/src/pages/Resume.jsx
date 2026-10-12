@@ -1,8 +1,6 @@
 // pages/Contact.jsx
 import React from 'react';
 import NavBar from '../components/navBar';
-import '../css/Resume.css';
-import '../css/Contact.css';
 import ModernFooter from '../Modern Components/ModernFooterComponent';
 
 
@@ -10,27 +8,19 @@ import ModernFooter from '../Modern Components/ModernFooterComponent';
 function ResumePage() {
   return <>
     <NavBar/>
-    <div class='wrap' style={{width: '100%', height: '250px', textAlign: 'center', color: "#fff", 
-            backgroundImage: "url('images/Background.png')", display: 'flex', justifyContent: 'center', alignItems: 'center', 
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'}}>
-        <h1 style={{fontSize: '34px', fontWeight: 'bold'}}>Resume</h1>
+    <div className="flex h-[250px] w-full items-center justify-center bg-cover bg-center bg-no-repeat text-center text-white" style={{ backgroundImage: "url('images/Background.png')" }}>
+        <h1 className="text-[34px] font-bold">Resume</h1>
     </div>
 
-    <div className = "bg-gray-900 py-6 px-6" style={{
-  display: 'flex',
-  justifyContent: 'center',
-}}>
-  <img className='frame' src={'images/JFerguson_SE_Resume.png'} alt="Resume" style={{ width: "500px", height: "650px" }} />
-  <div style={{ width: "25px", height: "650px", background: 'black' }}></div>
-  <img 
-    className='frame'
-    src={'images/JFerguson_SDET_Resume.png'}
-    alt="Resume"
-    style={{ width: "500px", height: "650px" }}
-  />
-</div>
+    <div className="bg-gray-700 px-6 py-12">
+      <div className="mx-auto w-full max-w-[650px] rounded-3xl bg-gradient-to-br from-yellow-400 to-orange-500 p-2 shadow-2xl">
+        <img
+          src="/images/JFerguson-SE-SDET-Aug2026-page1.png"
+          alt="Resume"
+          className="block h-auto w-full rounded-2xl bg-white shadow-lg"
+        />
+      </div>
+    </div>
     <ModernFooter />
   </>
 }

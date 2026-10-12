@@ -36,7 +36,7 @@ export default function ModernContact() {
   };
 
   return (
-    <div className="bg-gray-700 flex items-center justify-center p-6">
+    <div className="flex w-full flex-1 items-center justify-center bg-gray-700 p-6">
       
       <div style={{display: 'flex', flexDirection: 'row'}}>
         

@@ -1,76 +1,61 @@
 import React from 'react';
-import './ProjectsGrid.css';
+
+const projects = [
+  {
+    name: "Battlemon",
+    img: "/images/Battlemon.png",
+    url: "https://jfergusooon.itch.io/battlemon",
+    headline: "A monster-catching RPG game inspired by classic titles.",
+    release: "2024",
+    platform: "MacOS",
+    linkLabel: "itch.io/battlemon",
+  },
+  {
+    name: "Tracker",
+    img: "/images/TrackerHome.png",
+    url: "https://www.job-tracker.io/home",
+    headline: "A productivity app to help you manage your job applications efficiently.",
+    release: "2026",
+    platform: "Windows & Browser",
+    linkLabel: "job-tracker.io",
+  },
+];
 
 const ProjectsGrid = () => {
-
-
   return (
-    <div className="home-project-list ">
-    
-      {/* Battlemon Project Entry */}
-      <div key="" className="project-column bg-gradient-to-br from-yellow-400 to-orange-500"  style={{border: 'solid 2px black', width: '270px'}}>
-        <div className='home-project-image-container'>
-          <img
-            src={`images/Battlemon.png`}
-            alt={"Battlemon"}
-            className="home-project-image"
-            style={{border: 'solid 1px black'}}
-          />
-
-          
-        </div>
-        
-        <div className="home-project-info">
-          <a href={"https://jfergusooon.itch.io/battlemon"} target='_blank' rel="noreferrer" class='link'>
-              <h2 className="project-title">Battlemon</h2>
-          </a>
-          <p className="home-project-headline">A monster-catching RPG game inspired by classic titles.</p>
-          
-          <div className="home-project-meta-row">
-              <span className="project-meta"><strong>Release: </strong>2024</span>
-              <span className="project-meta"><strong>Platforms: </strong>MacOS</span>
-          </div>
-          <div>
-                <span className="home-project-meta"><strong>Link: </strong> <a href={"https://jfergusooon.itch.io/battlemon"} target="_blank" rel="noopener noreferrer">https://jfergusooon.itch.io/battlemon</a></span>
-          </div>
-          
-        </div>
-
+    <div className="overflow-hidden rounded-3xl bg-gray-800 shadow-2xl">
+      <div className="bg-gradient-to-r from-orange-600 to-orange-700 px-4 py-5 text-center">
+        <h2 className="text-xl font-bold text-white">Featured Projects</h2>
+        <p className="text-sm text-white">Highlighted projects showcasing my skills and expertise in software development.</p>
       </div>
-
-      {/* Tracker Project Entry */}
-      <div key="" className="project-column bg-gradient-to-br from-yellow-400 to-orange-500" style={{border: 'solid 2px black', width: '270px'}}>
-        <div  className='home-project-image-container'>
-          <img
-            src={`images/Tracker.png`}
-            alt={"Battlemon"}
-            className="home-project-image"
-            style={{border: 'solid 1px black'}}
-          />
-
-          
-        </div>
-        
-        <div className="home-project-info">
-          <a href={"https://jfergusooon.itch.io/battlemon"} target='_blank' rel="noreferrer" class='link'>
-              <h2 className="project-title">Tracker</h2>
-          </a>
-          <p className="home-project-headline">A productivity app to help you manage your job applications efficiently.</p>
-          
-          <div className="home-project-meta-row">
-              <span className="project-meta"><strong>Release: </strong>2025</span>
-              <span className="project-meta"><strong>Platforms: </strong>Windows</span>
+      <div className="grid gap-4 bg-slate-500 p-4 sm:grid-cols-2">
+        {projects.map((project) => (
+          <div key={project.name} className="overflow-hidden rounded-2xl bg-gray-800">
+            <div className="flex h-44 items-center justify-center bg-gradient-to-br from-yellow-400 to-orange-500 p-2">
+              <img
+                src={project.img}
+                alt={project.name}
+                className="max-h-full w-full rounded-lg bg-white object-contain p-1"
+              />
+            </div>
+            <div className="space-y-1 p-3 text-center">
+              <a href={project.url} target="_blank" rel="noreferrer">
+                <h3 className="text-lg font-bold text-white">{project.name}</h3>
+              </a>
+              <p className="text-xs leading-snug text-orange-100">{project.headline}</p>
+              <p className="text-xs text-orange-300">
+                <strong className="text-white">Release:</strong> {project.release}
+                <span className="mx-1 text-white">·</span>
+                <strong className="text-white">Platforms:</strong> {project.platform}
+              </p>
+              <a href={project.url} target="_blank" rel="noopener noreferrer" className="block break-all text-xs text-blue-300 underline hover:text-blue-200">
+                {project.linkLabel}
+              </a>
+            </div>
           </div>
-          <div>
-                <span className="home-project-meta"><strong>Link: </strong> <a href={"/home"} target="_blank" rel="noopener noreferrer">TBD</a></span>
-          </div>
-          
-        </div>
-
+        ))}
       </div>
-      
     </div>
-
   );
 };
 

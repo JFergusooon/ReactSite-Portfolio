@@ -4,7 +4,7 @@ export default function ModernResume() {
   const profile = {
     name: "Jeffrey Ferguson",
     bio: "Hello! I am a passionate software developer with a strong interest in creating innovative applications and solutions. With a background in computer science and hands-on experience in various programming languages, I enjoy tackling complex problems and turning ideas into reality through code. In my free time, I love exploring new technologies, contributing to open-source projects, and continuously improving my skills. Welcome to my portfolio website, where you can explore some of the projects I've worked on and learn more about my journey in the world of software development.",
-    image: "/images/Myself.png"
+    image: "/images/Myself.jpg"
   };
 
   const education = {

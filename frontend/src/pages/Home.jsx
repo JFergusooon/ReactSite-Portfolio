@@ -11,6 +11,8 @@ import ModernResume from '../Modern Components/ModernResumeComponent'
 
 function HomePage() {
 
+  const showWhyChooseMe = false;
+
   const [isOurMissionVisible, setIsOurMissionVisible] = useState(true);
   const [isContactUsVisible, setIsContactUsVisible] = useState(false);
   const [isHistoryVisible, setIsHistoryVisible] = useState(false);
@@ -65,26 +67,39 @@ function HomePage() {
 
     <ModernResume />
 
-    {/*Software Development Section*/}
-    <div style={{display: 'flex', width: '100%', background: '#dbd8d5ff', alignContent: 'center'}}>
-      <div style={{background: '#69625fff', width: '1000px', gap: '100px', margin: 'auto'}}>
-        <div style={{display: 'flex', flexDirection: 'row', marginLeft: '15%', gap: '30px'}}>
-          <div style={{display: 'flex', justifyContent: 'center'}}>
-            <img src='images/KeyboardIcon.png' alt='^' style={{width: '50px', height: '50px', marginTop: '100%'}}/>
+    <div className="bg-gray-700 px-6 py-12">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(300px,520px)]">
+        <div className="flex min-w-0 flex-col gap-6">
+          <div className="flex flex-col overflow-hidden rounded-3xl bg-gray-800 shadow-2xl md:flex-row">
+            <div className="flex items-center justify-center bg-gradient-to-br from-yellow-400 to-orange-500 p-5 md:w-1/4">
+              <img src="/images/KeyboardIcon.png" alt="" className="h-12 w-12 rounded-xl bg-white p-2 shadow-lg" />
+            </div>
+            <div className="bg-slate-500 p-5 md:w-3/4">
+              <div className="mb-2 rounded-2xl bg-gradient-to-r from-red-900 to-red-950 px-3 py-2">
+                <h2 className="text-center text-lg font-bold text-white">Software Development</h2>
+              </div>
+              <div className="rounded-2xl border-4 border-gray-800 bg-slate-400 px-4 py-3">
+                <p className="text-center text-sm leading-snug text-gray-900">I, Jeffrey Ferguson, have a rich history developing both server side and web based software solutions. I pride myself on writing clean, professional, and scalable software that functions to incredible standards while being delivered on time.</p>
+              </div>
+            </div>
+          </div>
+
+          <ProjectsGrid />
         </div>
-        <div style={{display: 'flex', flexDirection: 'column', height: '250px', padding: '20px', color: '#fff', alignItems: 'center', textAlign: 'left', gap: "10px", justifyContent: 'center'}}>
-          <p style={{width: "320px", marginBottom: '15px', color: 'yellow', paddingTop: '10px'}}>Software Development</p>
-          {/*<p style={{width: '320px', textAlign: 'left',}}>Ferguson Software Solutions has a rich history developing both server side and web based software solutions. We pride ourselves on our clean, professional and scalable software that functions as expected while being delivered on time. Stop dealing with excuses.</p>*/}
-          <p style={{width: '320px', textAlign: 'left', paddingBottom: '15px'}}>I, Jeffrey Ferguson, have a rich history developing both server side and web based software solutions. I pride myself on writing clean, professional, and scalable software that functions to incredible standards while being delivered on time. We make our clients feel valued and heard throughout the development process. </p>
+
+        <div className="mx-auto w-full max-w-[520px] rounded-3xl bg-gradient-to-br from-yellow-400 to-orange-500 p-2 shadow-2xl lg:mx-0">
+          <img
+            src="/images/JFerguson-SE-SDET-Aug2026-page1.png"
+            alt="Resume"
+            className="block h-auto w-full rounded-2xl bg-white shadow-lg"
+          />
         </div>
-        </div>
-        
       </div>
     </div> 
       
     
 
-    {/*Why Choose Me Section*/}
+    {showWhyChooseMe && (
     <div style={{display: 'flex', width: '100%', background: '#f4f1ed', alignContent: 'center'}}>
       <div style={{padding: '20px', background: '#f4f1ed', color: '#000', textAlign: 'center', width: '1000px', margin: 'auto', border: '3px solid black'}}>
           <div style={{justifyContent: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px'}}>
@@ -140,37 +155,7 @@ function HomePage() {
           </div>
       </div>
     </div>
-
-    <div className = "bg-gray-900 py-6 px-6" style={{
-  display: 'flex',
-  justifyContent: 'center',
-}}>
-  <img className='frame' src={'images/JFerguson_SE_Resume.png'} alt="Resume" style={{ width: "500px", height: "650px" }} />
-  <div style={{ width: "25px", height: "650px", background: 'black' }}></div>
-  <img 
-    className='frame'
-    src={'images/JFerguson_SDET_Resume.png'}
-    alt="Resume"
-    style={{ width: "500px", height: "650px" }}
-  />
-</div>
-
-
-
-    <div style={{padding: '20px', background: '#69625fff', color: '#fff', textAlign: 'center'}}>
-        <div>
-            <h2> Featured Projects </h2>
-            <p> Here are some of my highlighted projects showcasing my skills and expertise in software development. </p>
-        </div>
-    </div>
-
-
-
-
-    <div>
-      {/* Add project components or links here */}
-      <ProjectsGrid />
-    </div>
+    )}
 
     <ModernFooter />
   </>

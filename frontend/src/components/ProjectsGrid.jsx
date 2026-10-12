@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const projects = [
   {
@@ -27,6 +28,7 @@ const ProjectsGrid = () => {
       <div className="bg-gradient-to-r from-orange-600 to-orange-700 px-4 py-5 text-center">
         <h2 className="text-xl font-bold text-white">Featured Projects</h2>
         <p className="text-sm text-white">Highlighted projects showcasing my skills and expertise in software development.</p>
+        <p className="mt-1 text-sm text-white">Check out more information on the <Link to="/projects" className="underline hover:text-orange-100">Projects page</Link>.</p>
       </div>
       <div className="grid gap-4 bg-slate-500 p-4 sm:grid-cols-2">
         {projects.map((project) => (

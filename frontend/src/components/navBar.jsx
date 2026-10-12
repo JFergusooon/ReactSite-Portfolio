@@ -23,8 +23,8 @@ function NavBar() {
         <Link to="/" className="navBarButton" onClick={() => setMenuOpen(false)}>Home</Link>
         <Link to="/projects" className="navBarButton" onClick={() => setMenuOpen(false)}>My Projects</Link>
         <Link to="/about" className="navBarButton" onClick={() => setMenuOpen(false)}>About Me</Link>
-        <Link to="/contact" className="navBarButton" onClick={() => setMenuOpen(false)}>Contact</Link>
         <Link to="/resume" className="navBarButton" onClick={() => setMenuOpen(false)}>Resume</Link>
+        <Link to="/contact" className="navBarButton" onClick={() => setMenuOpen(false)}>Contact</Link>
       </div>
 
     </nav>

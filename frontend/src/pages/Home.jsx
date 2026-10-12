@@ -72,7 +72,7 @@ function HomePage() {
         <div className="flex min-w-0 flex-col gap-6">
           <div className="flex flex-col overflow-hidden rounded-3xl bg-gray-800 shadow-2xl md:flex-row">
             <div className="flex items-center justify-center bg-gradient-to-br from-yellow-400 to-orange-500 p-5 md:w-1/4">
-              <img src="/images/KeyboardIcon.png" alt="" className="h-12 w-12 rounded-xl bg-white p-2 shadow-lg" />
+              <img src="/images/KeyboardIcon.png" alt="" className="h-[72px] w-[72px] rounded-xl bg-white p-2 shadow-lg" />
             </div>
             <div className="bg-slate-500 p-5 md:w-3/4">
               <div className="mb-2 rounded-2xl bg-gradient-to-r from-red-900 to-red-950 px-3 py-2">

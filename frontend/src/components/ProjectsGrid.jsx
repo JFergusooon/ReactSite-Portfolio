@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const projects = [
   {
     name: "Battlemon",
-    img: "/images/Battlemon.png",
+    img: "/images/Battlemon/1_BattleMain.png",
     url: "https://jfergusooon.itch.io/battlemon",
     headline: "A monster-catching RPG game inspired by classic titles.",
     release: "2024",
@@ -13,7 +13,7 @@ const projects = [
   },
   {
     name: "Tracker",
-    img: "/images/TrackerHome.png",
+    img: "/images/Tracker/1_HomeScreen.png",
     url: "https://www.job-tracker.io/home",
     headline: "A productivity app to help you manage your job applications efficiently.",
     release: "2026",

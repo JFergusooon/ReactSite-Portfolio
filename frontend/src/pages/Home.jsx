@@ -89,7 +89,7 @@ function HomePage() {
 
         <div className="mx-auto w-full max-w-[520px] rounded-3xl bg-gradient-to-br from-yellow-400 to-orange-500 p-2 shadow-2xl lg:mx-0">
           <img
-            src="/images/Resumes/JFerguson-SE-SDET-Aug2026-page1.png"
+            src="/images/Resumes/JFerguson-SE-SDET-Oct2026-page1.png"
             alt="Resume"
             className="block h-auto w-full rounded-2xl bg-white shadow-lg"
           />

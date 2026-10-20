@@ -27,7 +27,7 @@ export default function ModernResume() {
       company: "LiveView Technologies",
       location: "American Fork, Utah, Hybrid",
       roles: [
-        { title: "Software Development Engineer in Test", type: "Full-time", period: "Apr 2026 - Present" }
+        { title: "Software Development Engineer in Test", type: "Full-time", period: "Apr 2026 - Oct 2026" }
       ]
     },
     {
